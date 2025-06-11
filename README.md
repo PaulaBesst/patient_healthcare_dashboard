@@ -15,9 +15,9 @@ This interactive dashboard provides healthcare professionals and administrators 
 - **Billing Analytics** - Insurance provider analysis and billing amount distributions
 - **Admission Trends** - Time-based patient admission patterns
 
-## 🎯 Key Features
+## Key Features
 
-### 📈 Analytics Modules
+### Analytics Modules
 
 1. **Patient Demographics**
    - Interactive age distribution charts by gender
@@ -44,14 +44,14 @@ This interactive dashboard provides healthcare professionals and administrators 
    - Filterable by medical condition
    - Line and bar chart options
 
-### 🔧 Interactive Features
+### Interactive Features
 
 - **Dynamic Filtering** - Filter data by gender, medical condition, and billing ranges
 - **Responsive Design** - Professional blue-themed interface
 - **Real-time Updates** - Interactive charts that update based on user selections
 - **Comprehensive Metrics** - Key performance indicators displayed prominently
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -82,7 +82,7 @@ python app.py
 http://localhost:8050
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 healthcare-analytics-dashboard/
@@ -116,7 +116,7 @@ The `healthcare.csv` file contains patient data with fields including:
 - Billing amounts
 - Admission dates
 
-## 🛠️ Technologies Used
+## 🛠Technologies Used
 
 - **Python 3.7+** - Core programming language
 - **Dash** - Web application framework
@@ -124,14 +124,14 @@ The `healthcare.csv` file contains patient data with fields including:
 - **Pandas** - Data manipulation and analysis
 - **CSS/SCSS** - Custom styling
 
-## 🎨 Design Features
+## Design Features
 
 - **Professional Theme** - Clean blue and white color scheme
 - **Responsive Layout** - Adapts to different screen sizes
 - **Interactive Elements** - Hover effects, clickable filters, and dynamic updates
 - **Modern UI Components** - Cards, dropdowns, and sliders
 
-## 📈 Use Cases
+## Use Cases
 
 This dashboard is ideal for:
 
@@ -140,11 +140,9 @@ This dashboard is ideal for:
 - **Medical Researchers** - Study patient admission patterns
 - **Hospital Management** - Monitor operational metrics
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
-- [ ] Add patient outcome tracking
 - [ ] Implement predictive analytics
 - [ ] Include geographic distribution maps
 - [ ] Add export functionality for reports
-- [ ] Integrate with electronic health records (EHR)
 - [ ] Add real-time data streaming capabilities
