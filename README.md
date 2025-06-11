@@ -15,6 +15,11 @@ This interactive dashboard provides healthcare professionals and administrators 
 - **Billing Analytics** - Insurance provider analysis and billing amount distributions
 - **Admission Trends** - Time-based patient admission patterns
 
+![Patient_Dashboard_1](images/Patient_Dashboard_1.png)
+
+![Patient_Dashboard_2](images/Patient_Dashboard_2.png)
+
+![Patient_Dashboard_3](images/Patient_Dashboard_3.png)
 ## Key Features
 
 ### Analytics Modules
