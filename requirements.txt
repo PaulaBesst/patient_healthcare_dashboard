@@ -1,0 +1,7 @@
+gunicorn
+plotly
+dash-bootstrap-components
+dash
+plotly
+plotly-express
+numpy

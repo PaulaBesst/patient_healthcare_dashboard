@@ -1,0 +1,165 @@
+// Import Google Fonts and Font Awesome
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+// SCSS Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$warning-color: #f39c12;
+$dark-color: #2c3e50;
+$light-gray: #ecf0f1;
+$medium-gray: #bdc3c7;
+$white: #ffffff;
+$background-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$card-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+$card-shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.15);
+$border-radius: 12px;
+$transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin card-hover {
+    transition: $transition;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $card-shadow-hover;
+    }
+}
+
+@mixin gradient-border($colors...) {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $colors);
+    }
+}
+
+// Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $background-gradient;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: $dark-color;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+// Dashboard Container
+.dashboard-container {
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+// Header Styles
+.header-row {
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+    backdrop-filter: blur(10px);
+}
+
+.dashboard-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $dark-color;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dashboard-subtitle {
+    font-size: 1.2rem;
+    color: $medium-gray;
+    font-weight: 400;
+    margin: 0;
+}
+
+// Summary Cards
+.summary-row {
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    border: none;
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+    @include card-hover;
+    overflow: hidden;
+    @include gradient-border($primary-color, $secondary-color);
+
+    &.patients-card {
+        @include gradient-border($primary-color, #8e44ad);
+    }
+
+    &.billing-card {
+        @include gradient-border($secondary-color, $warning-color);
+    }
+}
+
+.metric-content {
+    @include flex-between;
+    padding: 1.5rem;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $dark-color;
+    margin: 0;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: $medium-gray;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+    color: $primary-color;
+    opacity: 0.3;
+}
+
+// Chart Cards
+.charts-row {
+    margin-bottom: 2rem;
+}
+
+.chart-card {
+    border: none;
+    border-radius: $border-radius;
+}
