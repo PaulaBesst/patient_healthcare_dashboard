@@ -151,3 +151,5 @@ This dashboard is ideal for:
 - [ ] Include geographic distribution maps
 - [ ] Add export functionality for reports
 - [ ] Add real-time data streaming capabilities
+
+⭐ **If you found this project helpful, please give it a star!** ⭐
